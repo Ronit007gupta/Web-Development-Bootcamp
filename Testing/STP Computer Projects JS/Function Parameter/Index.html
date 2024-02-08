@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Parameters</title>
+</head>
+<body>
+
+    <form>
+        <input type="number" id="first">
+        <input type="number"  id="second">
+
+    <button onclick="return call()">Submit</button>
+    </form>
+
+    <h2 id="sub"></h2>
+    <h2 id="sub1"></h2>
+    <h2 id="sub2"></h2>
+    <h2 id="sub3"></h2>
+    <h2 id="sub4"></h2>
+ 
+
+    <script>
+        function call(){
+            let x = Number(document.getElementById("first").value);
+            let y = Number(document.getElementById("second").value);
+
+            let z = x+y;
+            let k = x-y;
+            let p = x*y;
+            let o = x/y;
+            let t = x%y;
+             
+           document.getElementById("sub").innerHTML = ("Addition is : "+ z)
+           document.getElementById("sub1").innerHTML = ("Subtraction is : "+ k)
+           document.getElementById("sub2").innerHTML = ("Multiplication is : "+ p)
+           document.getElementById("sub3").innerHTML = ("Division is : "+ o)
+           document.getElementById("sub4").innerHTML = ("Modulo is : "+ t)
+           return false;
+          
+        }
+    </script>
+
+    <hr>
+
+    <img src="/images/Ronit Gupta.jpg" alt="me" height="400" width="200" id="pic">
+
+    <br>
+    <button id="btn" onclick="img()">Hide</button>
+
+    <script>
+
+        function img(){
+            var x = document.getElementById("pic").style.display = "none";
+            var y = document.getElementById("btn").innerHTML = "show"
+            var z = y.innerHTML;
+
+            if(z=="show"){
+                x.style.display = "block";
+                y.innerHTML = "Hide";
+            }
+
+        }
+
+    </script>
+    
+</body>
+</html>

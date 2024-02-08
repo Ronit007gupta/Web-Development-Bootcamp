@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .head{
+            text-align: center;
+            font-size: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 200px;
+            text-decoration: underline red;
+        }
+
+        .subhd{
+            font-size: 35px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: blue;
+        }
+
+        #password{
+            font-size:22px;
+            border-radius: 4px;
+        }
+
+        .padding{
+            padding-top: 50px;
+
+        }
+
+        #loader{
+            font-size: 30px;
+            color: black;
+        }
+
+        #tick{
+            font-size: 35px;
+            color: green;
+        }
+
+        #clickhd{
+            font-size: 28px;
+        }
+    </style>
+</head>
+<body>
+    <script src="form.js"></script>
+
+    <div class="head">Password Validation</div>
+
+    <div class="padding">
+    <span class="subhd">Password :</span>
+
+    <input type="text" id="password" placeholder="Type your Password" onclick="clickme()" oninput="addme()">
+
+    <span id="clickhd"></span>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <i id="loader" class="fa-solid fa-spinner fa-spin" style="opacity: 0;"></i>
+
+    <i id="tick" class="fa-solid fa-check" style="opacity:0;"></i>
+    </div>
+    
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+.container{
+    background-color: black;
+    color: white;
+    width: 150px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.bt{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container2{
+    background-color: black;
+    color: white;
+    width: 150px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.ct{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container3{
+    background-color: black;
+    color: white;
+    width: 150px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.st{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.disply{
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.img{
+    padding-left: 360px;
+}
+
+
+
+
+
+
+
+

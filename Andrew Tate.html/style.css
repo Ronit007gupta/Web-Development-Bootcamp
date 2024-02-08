@@ -1,0 +1,61 @@
+.image{
+ padding-left: 120px;
+ padding-top: 40px;
+
+}
+
+.head{
+    font-size: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 70px;
+    color: red;
+    padding-right: 120px;
+    padding-top: 90px;  
+}
+
+.type1{
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 20px;
+    color: orangered;
+    background-color: aquamarine;
+    text-align: center;
+    transition-property: all;
+    transition-duration: 0.9s;
+}
+
+
+.flexing{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.para{
+    font-size: 27px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.type2{
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 20px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    
+}
+
+.type1:hover{
+    background-color: blue;
+    color: white;
+}
+
+
+
+
+
+
+

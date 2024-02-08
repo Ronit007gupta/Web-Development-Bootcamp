@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download File Page Starter</title>
+</head>
+<body>
+
+    <h1>Please wait for download in <span id="count_down">5</span> seconds</h1>
+    <a href="kesariya.mp4" id = "link" download="Kesariya song">Click here for download if not started</a>
+
+    <script>
+        var count  = document.getElementById("count_down");
+        var back = 5;
+        var dlink = document.getElementById("link");
+
+        window.onload = function(){
+        var start = setInterval( timer,1100);
+
+        function timer(){
+            count.innerHTML = back--;
+
+        if(count.innerHTML < 1){
+            clearInterval(start);
+            dlink.click();
+            window.open("https://therealworld.net/");
+        }
+      }
+    }
+
+
+    </script>
+    
+</body>
+</html>

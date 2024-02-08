@@ -1,0 +1,21 @@
+a{
+    margin-right: 180px;
+    text-decoration: none;
+}
+
+div{
+    background-color: black;
+    height: 40px;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+button{
+    background-color: orangered;
+    color: white;
+}
+
+
+
+

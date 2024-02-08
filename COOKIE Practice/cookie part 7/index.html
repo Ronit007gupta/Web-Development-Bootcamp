@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to store Multiple Cookie</title>
+    <style>
+        #user_name , #user_pass, #user_num{
+            font-size: 30px;
+            padding: 8px;
+            border-radius: 0.8rem;
+            color: red;
+            border: 2.25px solid blue;
+        }
+
+        #btnn{
+            font-size: 30px;
+            border-radius: 0.8rem;
+            color: white;
+            border: 3.75px solid red;
+            background-color: black;
+        }
+
+        #read{
+            font-size: 30px;
+            border-radius: 0.8rem;
+            color: red;
+            border: 3.75px solid blue;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <form>
+
+    <input type="text" placeholder="Username"  id="user_name">     <br><br>
+
+    <input type="password" placeholder="Password" id="user_pass">    <br><br>
+
+    <input type="number" placeholder="Mobile No." id="user_num">
+
+    <br><br>
+
+    <button id="btnn">Submit Now</button>
+    <button id="read">Read Now</button>
+
+
+</form>
+
+
+    <script>
+        let name = document.getElementById("user_name");
+        let pass_word = document.getElementById("user_pass");
+        let Mobile = document.getElementById("user_num");
+        let button = document.getElementById("btnn");
+        let see = document.getElementById("read");
+
+        button.onclick = function(){
+            document.cookie = "names ="+name.value+"; max-age = 3600";
+            document.cookie = "pass = "+pass_word.value+"; max-age = 3600";
+            document.cookie = "mob ="+Mobile.value+"; max-age = 3600";
+        }
+
+        see.onclick = function(){
+           var all_cookie = document.cookie.split("; ");
+           var i;
+           for(i = 0; i<all_cookie.length;i++){
+
+           var data = all_cookie[i].split("=");
+           document.write(data[1]+"<br>"+"<br>");
+        }
+    }
+
+
+
+    </script>
+</body>
+</html>
